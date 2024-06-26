@@ -1,0 +1,174 @@
+// Imported Google fonts
+@import url('https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100..900;1,100..900&display=swap');
+
+// Define the color palette map
+$color-palette: (
+        primary: (
+                lightest: #F6F8FF,
+                lighter: #E9EBFF,
+                base: #8898AA,
+                darker: #525F7F,
+                darkest: #32325D
+        ),
+        secondary: (
+                lightest: #FFF9EB,
+                lighter: #FFEEC9,
+                base: #FFCE67,
+                darker: #FFB400,
+                darkest: #FD9600
+        )
+);
+
+@function color($color-name, $color-tone: 'base') {
+  @if map-has-key($color-palette, $color-name) {
+    $color-map: map-get($color-palette, $color-name);
+
+    @if map-has-key($color-map, $color-tone) {
+      @return map-get($color-map, $color-tone);
+    }
+  }
+  @return null;
+}
+
+// Custom reusable mixins
+@mixin cta-btn {
+  background-color: color(secondary, darkest);
+  color: color(secondary, lightest);
+  border-radius: 4px;
+  padding: 8px 24px;
+  font-size: 1.5rem;
+  letter-spacing: 1px;
+
+  &:hover {
+    background-color: color(secondary, lightest);
+    color: color(secondary, darkest);
+  }
+}
+
+// General styling
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 62.5%;
+}
+
+body {
+  font-family: 'Raleway', sans-serif;
+  color: color(secondary, darkest);
+  font-size: 1.8rem;
+  line-height: 1.6;
+}
+
+ul {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+}
+
+.btn {
+  @include cta-btn;
+}
+
+.bg-header {
+  background-color: color(primary, darkest);
+
+  // Navigation styling
+  nav {
+    height: 9rem;
+
+    .navbar-brand {
+      font-size: 2.4rem;
+    }
+    .nav-link:link, .nav-link:visited {
+      color: color(secondary, darker);
+      font-size: 1.8rem;
+      font-weight: 500;
+      display: inline-block;
+    }
+    .nav-link:hover, .nav-link:active {
+      color: color(secondary, lighter);
+    }
+    .nav-link.cta {
+      display: inline-block;
+      @include cta-btn
+    }
+  }
+}
+
+// Font-size styling
+h1 {
+  color: color(secondary, lighter);
+  font-size: 5.2rem;
+  letter-spacing: 1px;
+  line-height: 1.3;
+  margin-bottom: 2rem;
+}
+
+h2 {
+  color: color(primary,darkest);
+  font-size: 4.4rem;
+  line-height: 1.3;
+}
+
+// Hero section styling
+.hero-section {
+  padding: 3.2rem 0;
+  p {
+    font-size: 1.8rem;
+    line-height: 1.7;
+    color: color(secondary, base);
+    letter-spacing: 1px;
+  }
+  button {
+    @include cta-btn;
+  }
+  .hero-img {
+    width: 90%;
+    transform: scaleX(-1);
+    border-radius: 4px;
+  }
+}
+
+// Featured section styling
+section.featured {
+  .card-title {
+    font-size: 1.8rem;
+    font-weight: bold;
+  }
+
+  .card-text {
+    font-size: 1.6rem;
+    color: color(primary, base);
+  }
+  button {
+    width: 100%;
+  }
+}
+
+// How it works styling
+section.how-it-works {
+  .how-it-works-title {
+    font-size: 2.4rem;
+    margin-bottom: 1.2rem;
+  }
+  .how-it-works-text {
+    font-size: 1.8rem;
+    color: color(primary, base);
+    line-height: 1.7;
+  }
+  .icon {
+    width: 2rem;
+    height: 2rem;
+    padding: 1.2rem;
+    color: color(secondary, lighter);
+    background-color: color(primary, darkest);
+    border-radius: 50%;
+    margin-bottom: 1.6rem;
+  }
+}

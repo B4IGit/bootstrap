@@ -1,0 +1,144 @@
+@import url("https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100..900;1,100..900&display=swap");
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 62.5%;
+}
+
+body {
+  font-family: "Raleway", sans-serif;
+  color: #FD9600;
+  font-size: 1.8rem;
+  line-height: 1.6;
+}
+
+ul {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+}
+
+.btn {
+  background-color: #FD9600;
+  color: #FFF9EB;
+  border-radius: 4px;
+  padding: 8px 24px;
+  font-size: 1.5rem;
+  letter-spacing: 1px;
+}
+.btn:hover {
+  background-color: #FFF9EB;
+  color: #FD9600;
+}
+
+.bg-header {
+  background-color: #32325D;
+}
+.bg-header nav {
+  height: 9rem;
+}
+.bg-header nav .navbar-brand {
+  font-size: 2.4rem;
+}
+.bg-header nav .nav-link:link, .bg-header nav .nav-link:visited {
+  color: #FFB400;
+  font-size: 1.8rem;
+  font-weight: 500;
+  display: inline-block;
+}
+.bg-header nav .nav-link:hover, .bg-header nav .nav-link:active {
+  color: #FFEEC9;
+}
+.bg-header nav .nav-link.cta {
+  display: inline-block;
+  background-color: #FD9600;
+  color: #FFF9EB;
+  border-radius: 4px;
+  padding: 8px 24px;
+  font-size: 1.5rem;
+  letter-spacing: 1px;
+}
+.bg-header nav .nav-link.cta:hover {
+  background-color: #FFF9EB;
+  color: #FD9600;
+}
+
+h1 {
+  color: #FFEEC9;
+  font-size: 5.2rem;
+  letter-spacing: 1px;
+  line-height: 1.3;
+  margin-bottom: 2rem;
+}
+
+h2 {
+  color: #32325D;
+  font-size: 4.4rem;
+  line-height: 1.3;
+}
+
+.hero-section {
+  padding: 3.2rem 0;
+}
+.hero-section p {
+  font-size: 1.8rem;
+  line-height: 1.7;
+  color: #FFCE67;
+  letter-spacing: 1px;
+}
+.hero-section button {
+  background-color: #FD9600;
+  color: #FFF9EB;
+  border-radius: 4px;
+  padding: 8px 24px;
+  font-size: 1.5rem;
+  letter-spacing: 1px;
+}
+.hero-section button:hover {
+  background-color: #FFF9EB;
+  color: #FD9600;
+}
+.hero-section .hero-img {
+  width: 90%;
+  transform: scaleX(-1);
+  border-radius: 4px;
+}
+
+section.featured .card-title {
+  font-size: 1.8rem;
+  font-weight: bold;
+}
+section.featured .card-text {
+  font-size: 1.6rem;
+  color: #8898AA;
+}
+section.featured button {
+  width: 100%;
+}
+
+section.how-it-works .how-it-works-title {
+  font-size: 2.4rem;
+  margin-bottom: 1.2rem;
+}
+section.how-it-works .how-it-works-text {
+  font-size: 1.8rem;
+  color: #8898AA;
+  line-height: 1.7;
+}
+section.how-it-works .icon {
+  width: 2rem;
+  height: 2rem;
+  padding: 1.2rem;
+  color: #FFEEC9;
+  background-color: #32325D;
+  border-radius: 50%;
+  margin-bottom: 1.6rem;
+}
+
+/*# sourceMappingURL=style.css.map */
