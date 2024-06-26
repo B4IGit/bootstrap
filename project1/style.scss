@@ -75,6 +75,7 @@ a {
   @include cta-btn;
 }
 
+// Header styling
 .bg-header {
   background-color: color(primary, darkest);
 
@@ -141,7 +142,6 @@ section.featured {
     font-size: 1.8rem;
     font-weight: bold;
   }
-
   .card-text {
     font-size: 1.6rem;
     color: color(primary, base);
@@ -170,5 +170,47 @@ section.how-it-works {
     background-color: color(primary, darkest);
     border-radius: 50%;
     margin-bottom: 1.6rem;
+  }
+}
+
+//Testimonials styling
+section.testimonials {
+  padding: 5rem 0;
+  background-color: color(secondary, base);
+  img {
+    width: 200px;
+    box-shadow: 0 0 0 0.2px;
+  }
+  .carousel-card {
+    width: 50%;
+    .testimonials-text, .testimonials-name {
+      color: color(primary, darkest);
+    }
+  }
+}
+
+//Footer styling
+footer {
+  background-color: color(primary, darkest);
+  h3, p {
+    color: #fff;
+  }
+  a {
+    color: color(secondary,darker);
+    &:hover {
+      color: color(secondary, lighter);
+    }
+  }
+  .icon {
+    width: 2.5rem;
+    height: 2.5rem;
+    padding: 0.5rem;
+    color: color(primary, darkest);
+    background-color: color(secondary, darkest);
+    border-radius: 50%;
+    margin-bottom: 1.6rem;
+    &:hover {
+      background-color: color(secondary, lighter);
+    }
   }
 }

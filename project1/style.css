@@ -141,4 +141,44 @@ section.how-it-works .icon {
   margin-bottom: 1.6rem;
 }
 
+section.testimonials {
+  padding: 5rem 0;
+  background-color: #FFCE67;
+}
+section.testimonials img {
+  width: 200px;
+  box-shadow: 0 0 0 0.2px;
+}
+section.testimonials .carousel-card {
+  width: 50%;
+}
+section.testimonials .carousel-card .testimonials-text, section.testimonials .carousel-card .testimonials-name {
+  color: #32325D;
+}
+
+footer {
+  background-color: #32325D;
+}
+footer h3, footer p {
+  color: #fff;
+}
+footer a {
+  color: #FFB400;
+}
+footer a:hover {
+  color: #FFEEC9;
+}
+footer .icon {
+  width: 2.5rem;
+  height: 2.5rem;
+  padding: 0.5rem;
+  color: #32325D;
+  background-color: #FD9600;
+  border-radius: 50%;
+  margin-bottom: 1.6rem;
+}
+footer .icon:hover {
+  background-color: #FFEEC9;
+}
+
 /*# sourceMappingURL=style.css.map */
