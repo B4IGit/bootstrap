@@ -85,7 +85,7 @@ h1 {
 
 h2 {
   color: #32325D;
-  font-size: 4.4rem;
+  font-size: calc(2.5rem + 1.5vw);
   line-height: 1.3;
 }
 
@@ -185,6 +185,12 @@ footer .icon {
 }
 footer .icon:hover {
   background-color: #FFEEC9;
+}
+
+@media (max-width: 992px) {
+  .navbar-nav {
+    background-color: #F6F8FF;
+  }
 }
 
 /*# sourceMappingURL=style.css.map */
